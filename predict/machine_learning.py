@@ -1,3 +1,5 @@
+import os
+import pathlib
 import pandas as pd
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
@@ -11,7 +13,8 @@ class Predict:
         self.dataset = None
 
     def init(self):
-        self.dataset = pd.read_csv(R"/home/descosmos/self_projects/heartDiseasePrediction/predict/dataset/heart.csv")
+        BASE_DIR = pathlib.Path(__file__).parent.resolve()
+        self.dataset = pd.read_csv(os.path.join(BASE_DIR, "dataset/heart.csv"))
 
     def predict(self, info):
         Y = self.dataset['target']
