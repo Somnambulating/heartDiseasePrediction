@@ -5,5 +5,5 @@ from django.template import loader
 
 def index(request):
     context = {}
-    template = loader.get_template('index.html')
+    template = loader.get_template('templates/index.html')
     return render(request, template, context)
