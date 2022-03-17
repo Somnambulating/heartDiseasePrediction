@@ -3,10 +3,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from django.views.decorators import csrf
-
-# 表单
-def search_form(request):
-    return render(request, 'index.html')
  
 # 接收请求数据
 def predict(request):
@@ -17,7 +13,7 @@ def predict(request):
     else:
         message = '你提交了空表单'
 
-    age = request.Get['age']
+    # age = request.Get['age']
     # sex = request.Get['sex']
     # cp = request.Get['cp']
     # trestbps = request.Get['trestbps']
