@@ -12,17 +12,17 @@ def predict(request):
     if request.POST:
         age = request.POST['age']
         sex = request.POST['sex']
-        cp = request.Get['cp']
-        trestbps = request.Get['trestbps']
-        chol = request.Get['chol']
-        fbs	= request.Get['fbs']
-        restecg = request.Get['restecg']
-        thalach = request.Get['thalach']
-        exang = request.Get['exang']
-        oldpeak	= request.Get['oldpeak']
-        slope = request.Get['slope']
-        ca = request.Get['ca']
-        thal = request.Get['thal']
+        cp = request.POST['cp']
+        trestbps = request.POST['trestbps']
+        chol = request.POST['chol']
+        fbs	= request.POST['fbs']
+        restecg = request.POST['restecg']
+        thalach = request.POST['thalach']
+        exang = request.POST['exang']
+        oldpeak	= request.POST['oldpeak']
+        slope = request.POST['slope']
+        ca = request.POST['ca']
+        thal = request.POST['thal']
         message = "result" + thal
     else:
         message = "failed"
