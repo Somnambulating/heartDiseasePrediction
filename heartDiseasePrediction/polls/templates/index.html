@@ -4,25 +4,55 @@
 <head>
     <meta charset="utf-8">
     <title>心脏病预测</title>
+
+    <link href="./index.css" rel="stylesheet">
 </head>
 
 <body>
     <form action="predict-post" method="post">
         {% csrf_token %}
-        age: <input type="text" name="age" required="required">
-        sex: <input type="text" name="sex" required="required"> -->
-        cp: <input type="text" name="cp" required="required">
-        trestbps: <input type="text" name="trestbps" required="required">
-        chol: <input type="text" name="chol" required="required">
-        fbs: <input type="text" name="fbs" required="required">
-        restecg: <input type="text" name="restecg" required="required">
-        thalach: <input type="text" name="thalach" required="required">
-        exang: <input type="text" name="exang" required="required">
-        oldpeak: <input type="text" name="oldpeak" required="required">
-        slope: <input type="text" name="slope" required="required">
-        ca: <input type="text" name="ca" required="required">
-        thal: <input type="text" name="thal" required="required">
-        <input type="submit" value="提交">
+        <div class="input_div">
+            age: <input type="text" name="age" required="required">
+        </div>        
+        <div class="input_div">
+            sex: <input type="text" name="sex" required="required">
+        </div>
+        <div class="input_div">
+            cp: <input type="text" name="cp" required="required">
+        </div>
+        <div class="input_div">
+            trestbps: <input type="text" name="trestbps" required="required">
+        </div>
+        <div class="input_div">
+            chol: <input type="text" name="chol" required="required">
+        </div>
+        <div class="input_div">
+            fbs: <input type="text" name="fbs" required="required">
+        </div>
+        <div class="input_div">
+            restecg: <input type="text" name="restecg" required="required">
+        </div>
+        <div class="input_div">
+            thalach: <input type="text" name="thalach" required="required">
+        </div>
+        <div class="input_div">
+            exang: <input type="text" name="exang" required="required">
+        </div>
+        <div class="input_div">
+            oldpeak: <input type="text" name="oldpeak" required="required">
+        </div>
+        <div class="input_div">
+            slope: <input type="text" name="slope" required="required">
+        </div>
+        <div class="input_div">
+            ca: <input type="text" name="ca" required="required">
+        </div>
+        <div class="input_div">
+            thal: <input type="text" name="thal" required="required">
+        </div>
+        <div>
+            <input type="submit" value="提交">
+        </div>
     </form>
 </body>
 

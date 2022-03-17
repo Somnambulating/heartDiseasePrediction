@@ -42,12 +42,12 @@ class Predict:
         return result_proba[0][1]
 
 
-def main():
-    predict = Predict()
-    predict.init()
-    # info = [71, 0, 0, 130, 149, 0, 1, 125, 0, 2.1, 1, 0, 2]
-    info = [50,0,0,110,254,0,0,159,0,0,2,0,2]
-    result = predict.predict(info)
-    print(result)
+# def main():
+#     predict = Predict()
+#     predict.init()
+#     # info = [71, 0, 0, 130, 149, 0, 1, 125, 0, 2.1, 1, 0, 2]
+#     info = [50,0,0,110,254,0,0,159,0,0,2,0,2]
+#     result = predict.predict(info)
+#     print(result)
 
-main()
+# main()
