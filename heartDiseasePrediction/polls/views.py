@@ -1,4 +1,5 @@
 from multiprocessing import context
+import re
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
@@ -8,9 +9,13 @@ from django.views.decorators import csrf
 def predict(request):
     request.encoding='utf-8'
 
-    age = request.POST['age']
-    sex = request.POST['sex']
-    message = message + age + sex
+    if request.POST:
+        age = request.POST['age']
+        message = message + age
+    else:
+        message = "failed"
+    # sex = request.POST['sex']
+
     # cp = request.Get['cp']
     # trestbps = request.Get['trestbps']
     # chol = request.Get['chol']
