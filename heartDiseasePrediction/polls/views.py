@@ -12,21 +12,26 @@ def search_form(request):
 def predict(request):
     request.encoding='utf-8'
 
-    age = request.Get['age']
-    sex = request.Get['sex']
-    cp = request.Get['cp']
-    trestbps = request.Get['trestbps']
-    chol = request.Get['chol']
-    fbs	= request.Get['fbs']
-    restecg = request.Get['restecg']
-    thalach = request.Get['thalach']
-    exang = request.Get['exang']
-    oldpeak	= request.Get['oldpeak']
-    slope = request.Get['slope']
-    ca = request.Get['ca']
-    thal = request.Get['thal']
+    if 'age' in request.GET and request.GET['age']:
+        message = '你搜索的内容为: ' + request.GET['age']
+    else:
+        message = '你提交了空表单'
 
-    message = "without prediction"
+    age = request.Get['age']
+    # sex = request.Get['sex']
+    # cp = request.Get['cp']
+    # trestbps = request.Get['trestbps']
+    # chol = request.Get['chol']
+    # fbs	= request.Get['fbs']
+    # restecg = request.Get['restecg']
+    # thalach = request.Get['thalach']
+    # exang = request.Get['exang']
+    # oldpeak	= request.Get['oldpeak']
+    # slope = request.Get['slope']
+    # ca = request.Get['ca']
+    # thal = request.Get['thal']
+
+    # message = "without prediction"
 
     return HttpResponse(message)
 
