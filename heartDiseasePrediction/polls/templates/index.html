@@ -1,59 +1,120 @@
 <!DOCTYPE html>
+{% load staticfiles %}
+
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>心脏病预测</title>
+    <title>Medical Emergency Form a Responsive Widget Template :: w3layouts</title>
 
-    <link href="./index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="{% static 'css/style2.css' %}" rel="stylesheet" />
+
+    <link href="./css/style2.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/now-ui-kit.css" rel="stylesheet" />
+    <link href="./css/medium-editor.min.css" rel="stylesheet">
+    <!--//fonts-->
 </head>
 
 <body>
-    <form action="predict-post" method="post">
-        {% csrf_token %}
-        <div class="input_div">
-            age: <input type="text" name="age" required="required">
-        </div>        
-        <div class="input_div">
-            sex: <input type="text" name="sex" required="required">
+    <!--background-->
+    <h1>Predict your Heart disease</h1>
+    <div class="bg-agile">
+        <div class="book-appointment">
+            <h2>Medical Information</h2>
+
+            <form action="predict-post" method="post">
+                <!-- {% csrf_token %} -->
+
+                <div class="gaps" style="float: left; width: 49%; margin-top: 50px;">
+                    <p>
+                        age:
+                    </p>
+                    <input type="text" name="age" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%; margin-top: 50px;">
+                    <p>
+                        sex:
+                    </p>
+                    <input type="text" name="sex" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        cp:
+                    </p>
+                    <input type="text" name="cp" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        trestbps:
+                    </p>
+                    <input type="text" name="trestbps" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        chol:
+                    </p>
+                    <input type="text" name="chol" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        fbs:
+                    </p>
+                    <input type="text" name="fbs" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        restecg:
+                    </p>
+                    <input type="text" name="restecg" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        thalach:
+                    </p>
+                    <input type="text" name="thalach" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        exang:
+                    </p>
+                    <input type="text" name="exang" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        oldpeak:
+                    </p>
+                    <input type="text" name="oldpeak" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        slope:
+                    </p>
+                    <input type="text" name="slope" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        ca:
+                    </p>
+                    <input type="text" name="ca" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <p>
+                        thal:
+                    </p>
+                    <input type="text" name="thal" required="required">
+                </div>
+                <div class="gaps" style="float: left; width: 49%;">
+                    <input type="submit" value="提交">
+                </div>
+            </form>
         </div>
-        <div class="input_div">
-            cp: <input type="text" name="cp" required="required">
-        </div>
-        <div class="input_div">
-            trestbps: <input type="text" name="trestbps" required="required">
-        </div>
-        <div class="input_div">
-            chol: <input type="text" name="chol" required="required">
-        </div>
-        <div class="input_div">
-            fbs: <input type="text" name="fbs" required="required">
-        </div>
-        <div class="input_div">
-            restecg: <input type="text" name="restecg" required="required">
-        </div>
-        <div class="input_div">
-            thalach: <input type="text" name="thalach" required="required">
-        </div>
-        <div class="input_div">
-            exang: <input type="text" name="exang" required="required">
-        </div>
-        <div class="input_div">
-            oldpeak: <input type="text" name="oldpeak" required="required">
-        </div>
-        <div class="input_div">
-            slope: <input type="text" name="slope" required="required">
-        </div>
-        <div class="input_div">
-            ca: <input type="text" name="ca" required="required">
-        </div>
-        <div class="input_div">
-            thal: <input type="text" name="thal" required="required">
-        </div>
-        <div>
-            <input type="submit" value="提交">
-        </div>
-    </form>
+    </div>
+    <!--copyright-->
+
 </body>
 
 </html>

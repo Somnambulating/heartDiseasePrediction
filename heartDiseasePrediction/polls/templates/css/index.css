@@ -1,0 +1,40 @@
+.input_div{
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 50px;
+    vertical-align: top;
+}
+
+.left-agileits-w3layouts {
+    width: 49%;
+    float: left;
+}
+
+.gaps {
+    padding-left: 3em;
+}
+
+.same {
+    padding: 0px 4px;
+}
+
+.book-appointment {
+    background:rgba(0, 0, 0, 0.24);
+    padding: 50px 30px;
+}
+
+.bg-agile {
+    width: 65%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background: url(./images/1.jpg)no-repeat center 0px;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+    background-attachment: fixed;
+}
