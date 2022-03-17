@@ -6,6 +6,7 @@ from django.template import loader
 from django.views.decorators import csrf
 import sys
 
+sys.path.append("..")
 from predict.machine_learning import Predict 
 prediction = Predict()
 prediction.init()
