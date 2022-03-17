@@ -6,7 +6,7 @@ from django.views.decorators import csrf
 
 # 表单
 def search_form(request):
-    return render(request, 'search_form.html')
+    return render(request, 'index.html')
  
 # 接收请求数据
 def search(request):  
@@ -16,3 +16,8 @@ def search(request):
     else:
         message = '你提交了空表单'
     return HttpResponse(message)
+
+def index(request):
+    context = {}
+    context['hello'] = 'Hello World!'
+    return render(request, "index.html", context)
