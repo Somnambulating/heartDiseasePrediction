@@ -25,7 +25,7 @@ def predict_probility(request):
         restecg = int(request.POST['restecg'])
         thalach = int(request.POST['thalach'])
         exang = int(request.POST['exang'])
-        oldpeak	= int(request.POST['oldpeak'])
+        oldpeak	= float(request.POST['oldpeak'])
         slope = int(request.POST['slope'])
         ca = int(request.POST['ca'])
         thal = int(request.POST['thal'])
