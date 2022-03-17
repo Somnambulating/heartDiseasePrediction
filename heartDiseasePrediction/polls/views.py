@@ -9,12 +9,25 @@ def search_form(request):
     return render(request, 'index.html')
  
 # 接收请求数据
-def search(request):  
+def predict(request):
     request.encoding='utf-8'
-    if 'q' in request.GET and request.GET['q']:
-        message = '你搜索的内容为: ' + request.GET['q']
-    else:
-        message = '你提交了空表单'
+
+    age = request.Get['age']
+    sex = request.Get['sex']
+    cp = request.Get['cp']
+    trestbps = request.Get['trestbps']
+    chol = request.Get['chol']
+    fbs	= request.Get['fbs']
+    restecg = request.Get['restecg']
+    thalach = request.Get['thalach']
+    exang = request.Get['exang']
+    oldpeak	= request.Get['oldpeak']
+    slope = request.Get['slope']
+    ca = request.Get['ca']
+    thal = request.Get['thal']
+
+    message = "without prediction"
+
     return HttpResponse(message)
 
 def index(request):
