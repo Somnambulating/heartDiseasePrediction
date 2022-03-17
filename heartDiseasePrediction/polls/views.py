@@ -8,12 +8,12 @@ import sys
 
 sys.path.append("..")
 from predict.machine_learning import Predict 
-prediction = Predict()
-prediction.init()
 
 # 接收请求数据
 def predict_probility(request):
     request.encoding='utf-8'
+    prediction = Predict()
+    prediction.init()
 
     if request.POST:
         age = int(request.POST['age'])
