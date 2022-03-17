@@ -7,17 +7,17 @@ from django.views.decorators import csrf
 # 接收请求数据
 def predict(request):
     request.encoding='utf-8'
-    request.encoding='utf-8'
-    if 'q' in request.GET and request.GET['q']:
-        message = '你搜索的内容为: ' + request.GET['q']
-    else:
-        message = '你提交了空表单'
-    return HttpResponse(message)
-
-    # if 'age' in request.GET and request.GET['age']:
-    #     message = '你搜索的内容为: ' + request.GET['age']
+    # request.encoding='utf-8'
+    # if 'q' in request.GET and request.GET['q']:
+    #     message = '你搜索的内容为: ' + request.GET['q']
     # else:
     #     message = '你提交了空表单'
+    # return HttpResponse(message)
+
+    if 'age' in request.GET and request.GET['age']:
+        message = '你搜索的内容为: ' + request.GET['age']
+    else:
+        message = '你提交了空表单'
 
     # age = request.Get['age']
     # sex = request.Get['sex']
@@ -35,7 +35,7 @@ def predict(request):
 
     # message = "without prediction"
 
-    # return HttpResponse(message)
+    return HttpResponse(message)
 
 def index(request):
     context = {}
