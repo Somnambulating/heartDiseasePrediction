@@ -32,6 +32,7 @@ def predict_probility(request):
 
         info = [age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]
         result = prediction.predict(info)
+        round(result, 2)
         message = "患得心脏病的几率为: " + str(result*100) + "%"
     else:
         message = "failed"
