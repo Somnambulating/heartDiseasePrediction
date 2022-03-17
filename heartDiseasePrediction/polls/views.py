@@ -19,8 +19,8 @@ def predict(request):
     else:
         message = '你提交了空表单'
 
-    # age = request.Get['age']
-    # sex = request.Get['sex']
+    sex = request.Get['sex']
+    message = message + request.GET['sex']
     # cp = request.Get['cp']
     # trestbps = request.Get['trestbps']
     # chol = request.Get['chol']
