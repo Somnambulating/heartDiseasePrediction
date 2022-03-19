@@ -37,11 +37,11 @@ def predict_probility(request):
     else:
         message = "failed"
 
-    context['result'] = 'result.html'
+    context['hello'] = 'Hello World!'
     return render(request, "result.html", context)
     # return HttpResponse(message)
 
 def index(request):
     context = {}
-    context['index'] = 'index.html'
+    context['hello'] = 'Hello World!'
     return render(request, "index.html", context)
