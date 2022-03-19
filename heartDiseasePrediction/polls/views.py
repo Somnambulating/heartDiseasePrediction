@@ -17,7 +17,9 @@ def predict_probility(request):
 
     if request.POST:
         age = int(request.POST['age'])
-        sex = int(request.POST['sex'])
+        sex = 0
+        if request.POST['sex'] == "女":
+            sex = 1
         cp = int(request.POST['cp'])
         trestbps = int(request.POST['trestbps'])
         chol = int(request.POST['chol'])
