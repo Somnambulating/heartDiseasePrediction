@@ -32,12 +32,16 @@ def predict_probility(request):
 
         info = [age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]
         result = prediction.predict(info)
-        round(result, 2)
-        message = "患得心脏病的几率为: " + str(result*100) + "%"
-    else:
-        message = "failed"
 
-    context = {'result': result}
+    if sex == 0:
+        sex = "男"
+    else:
+        sex = "女"
+
+    context = {'age':age, 'sex':sex, 'cp':cp, 'trestbps':trestbps, \
+        'chol':chol, 'fbs':fbs, 'restecg':restecg, 'thalach':thalach, \
+        'exang':exang, 'oldpeak':oldpeak, 'slope':slope, 'ca':ca, \
+        'result': str(round(result*100, 2))}
     return render(request, "result.html", context)
     # return HttpResponse(message)
 
