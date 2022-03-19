@@ -40,7 +40,7 @@ def predict_probility(request):
 
     context = {'age':age, 'sex':sex, 'cp':cp, 'trestbps':trestbps, \
         'chol':chol, 'fbs':fbs, 'restecg':restecg, 'thalach':thalach, \
-        'exang':exang, 'oldpeak':oldpeak, 'slope':slope, 'ca':ca, \
+        'exang':exang, 'oldpeak':oldpeak, 'slope':slope, 'ca':ca, 'thal': thal, \
         'result': str(round(result*100, 2))}
     return render(request, "result.html", context)
     # return HttpResponse(message)
