@@ -79,3 +79,7 @@ def document_heart_reason(request):
 def document_heart_performance(request):
     context={}
     return render(request,'document_heart_performance.html',context=context)
+
+def document_heart_go_doctor(request):
+    context={}
+    return render(request,'document_heart_go_doctor.html',context=context)

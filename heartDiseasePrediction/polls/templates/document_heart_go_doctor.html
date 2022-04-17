@@ -1,0 +1,146 @@
+{% load static %}
+<html>
+
+<head>
+    <title>心脏病相关概述</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style> -->
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="{% url 'index' %}">心脏疾病就医</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="{% url 'index' %}">主页</a></li>
+                    <li>
+                        <a href="#" class="icon solid fa-angle-down">目录</a>
+                        <ul>
+                            <li><a href="{% url 'generic' %}">Generic</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'elements' %}">Elements</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option One</a></li>
+                                    <li><a href="#">Option Two</a></li>
+                                    <li><a href="#">Option Three</a></li>
+                                    <li><a href="#">Option Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div class="w3-main" style="margin-left:70px">
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <p>如果出现心慌心悸、胸痛、呼吸困难或昏倒等情况，应尽快就医。
+                        <br><b>医生可能问及的问题有：</b>>
+                        <br>询问患者是否有得心脏病的亲属，来初步判断是否是家族遗传导致的。
+                        <br>了解患者的日常饮食习惯、用药情况、感染史以及是否吸烟等，来判断是否存在心脏病的高危因素。
+                        <br>询问患者胸痛心悸等症状发作的时间、频率、诱因以及疼痛的具体部位，进行初步诊断。
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病去哪个科室就诊?</h1>
+                    <p>心内科、心胸外科
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病有哪些相关检查?</h1>
+                    <p>
+                        <br><b>1.查体: </b>医生会听诊心脏、测量血压，检查全身皮肤是否肿胀、是否有压痛等，来了解患者基本生命体征情况。
+                        <br><b>2.心电图及相关检查: </b>这是常用的检查手段, 检查心律是否出现异常。此外, 24小时动态心电图或运动负荷试验可监测到心脏出现的偶尔异常, 可以更准确判断是否有心脏病。
+                        药物或特殊治疗：长期服用某些药物如避孕药或糖皮质激素会诱发心脏病；一些保健品或中药也会损伤心脏而诱发心脏病；放化疗的心肌毒性也会直接导致心脏病。
+                        <br><b>3.影像学检查: </b>X线、超声心动图、CT和核磁共振可显示心脏病变的具体部位以及严重程度，造影剂可帮助获得更清晰的图像。
+                        <br><b>4.生物标志物分析: </b>心肌肌钙蛋白、肌酸激酶等可反映心肌是否受损；脑钠肽水平可反映心衰程度；自身抗体检测可反映患者是否是自身免疫病导致的心脏病。
+                        <br><b>5.血常规: </b>检查血红蛋白浓度、血细胞大小及形态等，来反映血细胞状态以及全身炎症状态。
+                        <br><b>6.血生化与血气: </b>检查的血糖、血脂、血氧水平，来反映是否存在心脏病高危因素以及是否存在缺氧。
+                        <br><b>7.病原体检测: </b>检查患者是否有细菌、病毒感染史，进一步明确是否是感染￼导致的心脏病。
+                        <br><b>8.病理检查: </b>可获取患者病变的组织进行病理检查，来明确病变部位的具体情况。
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病需要和哪些疾病区别?</h1>
+                    <p>
+                        <br><b>1 先天性心脏病的鉴别</b>
+                        主要与后天性心脏病（如冠心病）进行鉴别。先天性心脏病主要表现是起病年龄小，且越小发生几率越大，有特殊杂音。通过超声心动图，了解心脏解剖结构和生理活动，即可诊断。
+                        <br><b>2 后天性心脏病的鉴别</b>
+                        常见的后天性心脏病有冠心病、风心病、肺心病等，简单介绍与其他心脏病的鉴别。
+                        <br><b>a 冠心病</b>
+                        应与急腹症、心脏神经官能症、植物神经功能失调、急性肺动脉栓塞、胆管和上消化道病变相鉴别。行冠状动脉造影能观察到冠脉血流不畅，是冠心病与其他疾病的鉴别要点。
+                        <br><b>b 风心病</b>
+                        应与感染性心内膜炎、病毒性心肌炎、类风湿性关节炎、结缔组织病等相鉴别。风心病的血清中有抗A型链球菌抗体。
+                        <br><b>c 肺心病</b>
+                        需与缺血性心衰、高血压性心脏病、甲亢性心脏病等相鉴别。肺心病有呼吸道病史且经X射线可见肺部病变, 血气分析可见低氧血症。
+                    </p>
+                </div>
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'js/browser.min.js' %}"></script>
+    <script src="{% static 'js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'js/util.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>
