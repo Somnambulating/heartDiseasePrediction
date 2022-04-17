@@ -45,7 +45,6 @@ def predict_probility(request):
         'exang':exang, 'oldpeak':oldpeak, 'slope':slope, 'ca':ca, 'thal': thal, \
         'result': str(round(result*100, 2))}
     return render(request, "result.html", context)
-    # return HttpResponse(message)
 
 def index(request):
     context = {}
