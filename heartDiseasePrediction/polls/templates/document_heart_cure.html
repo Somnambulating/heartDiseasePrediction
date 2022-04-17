@@ -1,0 +1,152 @@
+{% load static %}
+<html>
+
+<head>
+    <title>心脏病相关概述</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style> -->
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="{% url 'index' %}">心脏疾病治疗</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="{% url 'index' %}">主页</a></li>
+                    <li>
+                        <a href="#" class="icon solid fa-angle-down">目录</a>
+                        <ul>
+                            <li><a href="{% url 'generic' %}">Generic</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'elements' %}">Elements</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option One</a></li>
+                                    <li><a href="#">Option Two</a></li>
+                                    <li><a href="#">Option Three</a></li>
+                                    <li><a href="#">Option Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div class="w3-main" style="margin-left:70px">
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <p>心脏病是心脏的结构和功能受损引起，作为一类疾病的总称，“心脏病”实际包括众多疾病，在治疗手段上，总体上来说多以药物治疗作为基础治疗方案，必要时行介入或手术治疗。但具体到不同类型的心脏病，其治疗方案极具个性化，一般医生会根据患者心脏病的具体类型、患者的症状以及有无并发症等，在综合评估后制定个性化的治疗方案。
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病有哪些药物治疗?</h1>
+                    <p>由于个体差异大，用药不存在绝对的最好、最快、最有效，除常用非处方药外，应在医生指导下充分结合个人情况选择最合适的药物。药物治疗通常是心脏病的首选治疗方案，治疗目标一般包括降压、降糖、降脂、扩血管、抗心律失常等，需由医生针对患者具体情况选用合适药物。
+                        <br><b>部分常用药物如下:</b>>
+                        <br><b>降压药: </b>二甲双胍、胰岛素注射剂、α糖苷抑制剂（如阿卡波糖）、格列奈类药物（如那格列奈）、磺脲类药物（如格列吡嗪）等。
+                        <br><b>降糖药: </b>医生会听诊心脏、测量血压，检查全身皮肤是否肿胀、是否有压痛等，来了解患者基本生命体征情况。
+                        <br><b>降脂药: </b>他汀类药物（如阿托伐他汀、辛伐他汀等）。
+                        <br><b>抗心律失常: </b>利多卡因、胺碘酮等。
+                        <br><b>扩血管药物: </b>硝酸甘油、硝酸异山梨酯等。
+                        <br><b>抗血小板: </b>阿司匹林、替格瑞洛等。
+                        <br><b>抗凝药物: </b>肝素、华法林等。
+                        <br><b>如果是感染性心脏病，还需要考虑应用抗感染的药物；如果是心肌受损导致的心脏病，医生可能会给予营养心肌的药物。
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病有哪些手术治疗?</h1>
+                    <p>
+                        <br>针对心脏病的手术治疗主要包括介入和传统手术治疗两种，具体手术方法需要在医生充分了解患者情况后针对性的进行选择。
+                        <br>介入在临床上较常用，效果良好，包括经皮冠状动脉介入术、射频消融术、置入心脏起搏器、缺损封堵术等。
+                        <br>传统手术需要开胸进行治疗，主要包括冠状动脉旁路移植术（俗称搭桥）、心脏瓣膜修补或置换术、先天性心脏病矫正和封堵术、心包切除术和心脏移植等。
+                        <br><b>部分常用的手术治疗方案如下：</b>>
+
+                        <br><b>1.经皮冠状动脉介入术: </b>这是治疗心脏病最常用的介入手段。医生在腿部或腕部大血管插入导管，进入冠脉病变部位用球囊扩张狭窄血管后，可放入金属支架，以此来疏通阻塞的冠状动脉。
+                        <br><b>2.冠状动脉旁路移植术: </b>针对多支血管阻塞，通过“搭桥术”来建立一条血管“旁路”来绕过阻塞部位，从而恢复心肌的正常血流。新建立的动脉可以取自患者自身的动脉，比如桡动脉、腹壁下动脉等。, 检查心律是否出现异常。此外, 24小时动态心电图或运动负荷试验可监测到心脏出现的偶尔异常, 可以更准确判断是否有心脏病。
+                        药物或特殊治疗：长期服用某些药物如避孕药或糖皮质激素会诱发心脏病；一些保健品或中药也会损伤心脏而诱发心脏病；放化疗的心肌毒性也会直接导致心脏病。
+                        <br><b>3.射频消融术: </b>用于消除心律失常，经动脉或静脉将电极送入导致心律失常的心脏病变部位，释放射频电流以破坏组织，使导致心律失常的病变部位坏死，从而缓解心律失常。
+                        <br><b>4.植入心脏起搏器: </b>心脏起搏器用于刺激心脏收缩，分为单腔起搏器、双腔起搏器以及三腔起搏器。单腔起搏器是指在右心房或右心室放置一根电极导线，使心脏跳动；双腔起搏器是指在右心房和右心室放两个电极导线，依次起搏心房、心室；三腔起搏器是将三根电极分别植入右心房、右心室和左心室，保证心脏搏动同步。
+                        <br><b>5.缺损封堵术: </b>通过介入的方式封堵缺损，瓣膜植入或修补，可用于先天性心脏病和心脏瓣膜病患者。
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病如何进行中医治疗?</h1>
+                    <p>
+                        一些中医治疗方法或药物可缓解心脏病症状，建议到正规医疗机构，在医师指导下治疗。
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病的治疗有什么新进展?</h1>
+                    <p>
+                        对遗传性心脏病进行基因治疗正在进行, 如肌肉肌酸病人心肌病登记系统(HaRe), 这是一个来自世界各地研究人员的临床和实验室数据的国际资料库，致力于更好地了解心肌病患者的遗传基础、共性和差异，以此定位明确的患者心脏病基因亚型，确定与疾病基础相关的分子靶标和可以在发育早期测量靶标效应的生物标记，有针对性的开发药物。
+                    </p>
+                </div>
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'js/browser.min.js' %}"></script>
+    <script src="{% static 'js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'js/util.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>

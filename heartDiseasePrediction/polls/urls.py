@@ -12,6 +12,7 @@ urlpatterns = [
     path('document_heart_reason', views.document_heart_reason, name='document_heart_reason'),
     path('document_heart_performance', views.document_heart_performance, name='document_heart_performance'),
     path('document_heart_go_doctor', views.document_heart_go_doctor, name='document_heart_go_doctor'),
+    path('document_heart_cure', views.document_heart_cure, name='document_heart_cure'),
     
     
     path('predict-post', views.predict_probility, name='predict-post')
