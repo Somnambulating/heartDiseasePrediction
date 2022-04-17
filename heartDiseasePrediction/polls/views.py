@@ -67,3 +67,9 @@ def elements(request):
 def generic(request):
     context={}
     return render(request,'generic.html',context=context)
+
+def document_heart_outline(request):
+    context={}
+    return render(request,'document_heart_outline.html',context=context)
+
+    
