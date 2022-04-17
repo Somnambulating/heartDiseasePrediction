@@ -31,110 +31,65 @@
 </head>
 
 <body class="is-preload">
-	<div id="page-wrapper">
+    <div id="page-wrapper">
 
         <!-- Header -->
-		<header id="header" class="alt">
-			<h1><a href="{% url 'index' %}">心脏健康平台</h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="{% url 'index' %}">主页</a></li>
-					<li>
-						<a href="#" class="icon solid fa-angle-down">目录</a>
-						<ul>
-							<li><a href="{% url 'generic' %}">Generic</a></li>
-							<li><a href="{% url 'contact' %}">Contact</a></li>
-							<li><a href="{% url 'elements' %}">Elements</a></li>
-							<li>
-								<a href="#">Submenu</a>
-								<ul>
-									<li><a href="#">Option One</a></li>
-									<li><a href="#">Option Two</a></li>
-									<li><a href="#">Option Three</a></li>
-									<li><a href="#">Option Four</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#" class="button">注册</a></li>
-				</ul>
-			</nav>
-		</header>
+        <header id="header">
+            <h1><a href="{% url 'index' %}">心脏健康平台</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="{% url 'index' %}">主页</a></li>
+                    <li>
+                        <a href="#" class="icon solid fa-angle-down">目录</a>
+                        <ul>
+                            <li><a href="{% url 'generic' %}">Generic</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'elements' %}">Elements</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option One</a></li>
+                                    <li><a href="#">Option Two</a></li>
+                                    <li><a href="#">Option Three</a></li>
+                                    <li><a href="#">Option Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- Main -->
         <section id="main" class="container medium">
-            <div class="w3-main" style="margin-left:50px">
+            <div class="w3-main" style="margin-left:70px">
 
                 <div class="w3-row w3-padding-64">
                     <div class="w3-twothird w3-container">
-                        <h1 class="w3-text-teal">Heading</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodo consequat. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo
-                            consequat.</p>
+                        <h1 class="w3-text-teal">心脏病是什么?</h1>
+                        <p>心脏病(heart disease)是心脏发生病变的疾病总称, 是一种常见的心内科疾病, 由心脏结构受损或功能异常引起。</p>
                     </div>
                 </div>
 
                 <div class="w3-row">
                     <div class="w3-twothird w3-container">
-                        <h1 class="w3-text-teal">Heading</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodo consequat. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo
-                            consequat.</p>
+                        <h1 class="w3-text-teal">心脏病在人群中的发病情况是怎样的?</h1>
+                        <p>因为心脏病是多种类型的总称，我国心脏病总体发病情况没有确切数据，不同类型的好发人群亦各有特点。根据一份国际健康报告显示，全球心脏病死亡率整体趋势逐年下降。</p>
                     </div>
                 </div>
 
                 <div class="w3-row w3-padding-64">
                     <div class="w3-twothird w3-container">
-                        <h1 class="w3-text-teal">Heading</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodo consequat. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo
-                            consequat.</p>
-                    </div>
-                </div>
-
-                <!-- Pagination -->
-                <div class="w3-center w3-padding-32">
-                    <div class="w3-bar">
-                        <a class="w3-button w3-black" href="#">1</a>
-                        <a class="w3-button w3-hover-black" href="#">2</a>
-                        <a class="w3-button w3-hover-black" href="#">3</a>
-                        <a class="w3-button w3-hover-black" href="#">4</a>
-                        <a class="w3-button w3-hover-black" href="#">5</a>
-                        <a class="w3-button w3-hover-black" href="#">»</a>
-                    </div>
-                </div>
-
-                <footer id="myFooter">
-                    <div class="w3-container w3-theme-l2 w3-padding-32">
-                        <h4>Footer</h4>
-                    </div>
-
-                    <div class="w3-container w3-theme-l1">
-                        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+                        <h1 class="w3-text-teal">心脏病有哪些类型?</h1>
+                        <p>根据病因心脏病可分为先天性心脏病和后天性心脏病。
+                            <br><b>1 先天性心脏病</b> 
+                            先天性心脏病，简称先心病，是指因胎儿时期心脏发育异常导致的心脏畸形所致，常见的有室间隔缺损、房间隔缺损、法洛四联症等。部分患者会因先天免疫系统异常，导致心肌受损，也会形成先天性心脏病。
+                            <br><b>2 后天性心脏病</b>
+                            后天性心脏病这一名称是相对于先心病，对获得性因素导致的心脏病的总称，指因非发育性原因导致的心脏结构和功能异常，比如冠状动脉粥样硬化性心脏病（冠心病）、风湿性心脏病（风心病）、感染性心肌或心内膜病变、高血压性心脏病、肺源性心脏病（肺心病）等。
                         </p>
                     </div>
-                </footer>
+                </div>
 
                 <!-- END MAIN -->
             </div>
