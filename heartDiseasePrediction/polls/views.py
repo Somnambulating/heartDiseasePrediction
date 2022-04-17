@@ -72,4 +72,9 @@ def document_heart_outline(request):
     context={}
     return render(request,'document_heart_outline.html',context=context)
 
+def document_heart_reason(request):
+    context={}
+    return render(request,'document_heart_reason.html',context=context)
+
+
     
