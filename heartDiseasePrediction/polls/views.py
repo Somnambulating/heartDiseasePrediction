@@ -87,3 +87,12 @@ def document_heart_go_doctor(request):
 def document_heart_cure(request):
     context={}
     return render(request,'document_heart_cure.html',context=context)
+
+def document_heart_predict(request):
+    context={}
+    return render(request,'document_heart_predict.html',context=context)
+
+def document_heart_attention(request):
+    context={}
+    return render(request,'document_heart_attention.html',context=context)
+

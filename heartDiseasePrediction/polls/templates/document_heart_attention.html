@@ -1,0 +1,142 @@
+{% load static %}
+<html>
+
+<head>
+    <title>心脏病相关概述</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style> -->
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="{% url 'index' %}">心脏疾病注意事项</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="{% url 'index' %}">主页</a></li>
+                    <li>
+                        <a href="#" class="icon solid fa-angle-down">目录</a>
+                        <ul>
+                            <li><a href="{% url 'generic' %}">Generic</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'elements' %}">Elements</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option One</a></li>
+                                    <li><a href="#">Option Two</a></li>
+                                    <li><a href="#">Option Three</a></li>
+                                    <li><a href="#">Option Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div class="w3-main" style="margin-left:70px">
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病的病因有哪些?</h1>
+                    <p>患者应严格按照医嘱坚持服药，少食用油腻、高糖的食物，限制钠盐的摄入，适当运动。
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病患者日常生活管理要注意什么?</h1>
+                    <p>
+                        <br><b>1.规范用药: </b>谨遵医嘱，规范用药，不可擅自停药、换药或加减药量。
+                        <br><b>2.定期复诊: </b>定期到医院复诊，监测各项指标恢复情况。
+                        <br><b>3.改善饮食: </b>保持营养均衡，可适当摄入粗粮、豆类等；少食用油腻高糖的食物，限制钠盐的摄入；避免摄入刺激性食物；避免饮用烈性酒、暴饮暴食，冷热刺激。
+                        <br><b>4.戒烟: </b>患者要彻底戒烟，避免吸入二手烟。
+                        <br><b>5.适当运动:</b>患者可以在病情缓解后, 每天坚持锻炼30分钟, 如散步等, 但避免剧烈运动或重体力工作。如果患者有不稳定心绞痛或严重的高血压￼、心衰等，不宜运动。
+                        <br><b>4.情绪管理: </b>避免暴怒、焦虑、过度悲伤等。
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">特别注意事项?</h1>
+                    <p>
+                        大家都知道心脏病是大病，重视程度是足够的，但也不可矫枉过正、影响生活.
+                        <br><b>1.关于妊娠: </b>心脏结构和功能经手术后达最佳状态可妊娠，但需要定期做孕期检查，防止疲劳，避免摄入过多的液体；计划怀孕前一定要先去心脏专家和产科专家处就医，做全面检查和评估，明确是否可以怀孕。通过评估确认可以怀孕的女性，在医生的严密监测下能够安全度过妊娠分娩期，拥有健康的宝宝。严重心脏病不宜妊娠者，避免怀孕。
+                        <br><b>2.关于乘坐飞机: </b>如果存在有以下情况，暂时不宜乘坐飞机。
+                        <br>a.2周内发作过心脏病（心肌梗死）者;
+                        <br>b.2周内冠状动脉内安放过支架者;
+                        <br>c.3周内做过冠状动脉搭桥术, 如果合并有呼吸系统疾病大于3周也是不适宜的;
+                        <br>d.具有不稳定型心绞痛，心力衰竭没有得到很好的控制，或没有得到控制的各种心律失常;
+                        <br>e.空中旅行时，心脏起搏器或植入式体内除颤器并不受干扰，但是如果是新近植入，需要参考医生意见;
+                        <br>有心脏病史，长途飞机旅程之前，要去医院进行检查以确保心脏病是处于稳定状态，出行时携带一份病历，携带足够的药物，携带家属及医生的联系电话号码。
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病怎么预防?</h1>
+                    <p>
+                        <br><b>1.先天性心脏病的预防: </b>孕妇在怀孕期避免接触有毒物质、放射线，可以减少先天性心脏病的发生率；对于遗传导致的先天性心脏病，只能通过产前检查来预测。
+                        <br><b>2.后天性获得性心脏病的预防: </b>可以通过改善日常生活方式（戒烟限酒、避免熬夜、劳累、调整情绪）预防心脏病的发生；如果患者存在慢性病，如糖尿病、高血压、高血脂，应通过药物、改善饮食和适当运动来控制这些慢性病对血管和心脏的损伤。
+                    </p>
+                </div>
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'js/browser.min.js' %}"></script>
+    <script src="{% static 'js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'js/util.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>
