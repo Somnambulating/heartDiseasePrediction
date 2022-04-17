@@ -10,7 +10,7 @@ urlpatterns = [
     path('predict_index', views.predict_index, name='predict_index'),
     path('document_heart_outline', views.document_heart_outline, name='document_heart_outline'),
     path('document_heart_reason', views.document_heart_reason, name='document_heart_reason'),
-    
+    path('document_heart_performance', views.document_heart_performance, name='document_heart_performance'),
     
     path('predict-post', views.predict_probility, name='predict-post')
 ]

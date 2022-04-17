@@ -1,0 +1,126 @@
+{% load static %}
+<html>
+
+<head>
+    <title>心脏病相关概述</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style> -->
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="{% url 'index' %}">心脏疾病常见症状</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="{% url 'index' %}">主页</a></li>
+                    <li>
+                        <a href="#" class="icon solid fa-angle-down">目录</a>
+                        <ul>
+                            <li><a href="{% url 'generic' %}">Generic</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'elements' %}">Elements</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option One</a></li>
+                                    <li><a href="#">Option Two</a></li>
+                                    <li><a href="#">Option Three</a></li>
+                                    <li><a href="#">Option Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div class="w3-main" style="margin-left:70px">
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病有哪些典型症状?</h1>
+                    <p>根据病因心脏病可分为先天性心脏病和后天性心脏病。
+                        <br><b>早期症状</b>
+                        <br>不同类型的心脏病可有不同的早期症状，包括心慌、心悸、胸闷、呼吸急促、头昏甚至昏厥等。
+                        <br>当出现心律失常时，指心跳异常，如跳动太快，太慢或不规则；表现为心慌、心悸、胸闷、呼吸急促、头昏甚至昏厥。
+                        <br>当发生心脏泵血功能减弱时，患者会有头晕乏力、心慌心悸、活动耐力降低的症状，重者血压下降甚至昏倒。
+                        <br>当出现心肌缺血时，因动脉狭窄导致心肌缺血的患者，往往出现心绞痛，严重时导致心肌梗死。
+                        <br>当发生血液淤积时，患者会感到腹胀和食欲下降、尿少水肿、胸闷气短，部分患者还会发生夜间呼吸困难、咳粉红色泡沫痰。
+
+                        <br><b> 不同类型心脏病的典型症状各有特点，以下介绍几种常见心脏病的典型症状。</b>
+                        <br>先心病的患儿会出现喂养困难，吸吮数口就停歇，易呕吐和大量出汗，常常喜欢蹲下缓解呼吸困难。
+                        <br>冠心病患者在体力劳动或情绪激动时会突然感觉胸痛、胸闷，如“过电”一般，持续几分钟至十几分钟，经休息或含服硝酸甘油会好转。
+                        <br>风心病患者易疲惫、活动后气促，晚期肺动脉高压时出现咳嗽、咳泡沫痰、咳血等症状。
+                        <br>肺心病主要表现为咳嗽、咳痰、呼吸急促、心悸、胸痛、乏力。重者呼吸困难且夜间加重、舌头手指出现青紫、多汗、日间嗜睡、精神萎靡、认知障碍、双臂不自主颤抖。
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">心脏病可能有哪些伴随症状?</h1>
+                    <p>
+                        <br><b>晕倒: </b>心脏不能有效的将血液泵入全身，会导致缺氧，引起昏厥。
+                        <br><b>手脚肿胀: </b>血液淤积在肢端，会引起手脚肿胀。
+                        <br><b>咳嗽: </b>血液淤积在肺脏会引起咳嗽。
+                        <br><b>发热: </b>感染导致的心内膜炎会引起发热。
+                        <br><b>体型矮小: </b>先天性心脏病的患儿因喂养不佳等会导致发育迟缓。
+                    </p>
+                </div>
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'js/browser.min.js' %}"></script>
+    <script src="{% static 'js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'js/util.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>

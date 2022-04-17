@@ -76,5 +76,6 @@ def document_heart_reason(request):
     context={}
     return render(request,'document_heart_reason.html',context=context)
 
-
-    
+def document_heart_performance(request):
+    context={}
+    return render(request,'document_heart_performance.html',context=context)
