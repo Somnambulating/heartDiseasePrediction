@@ -22,32 +22,6 @@
 </head>
 
 <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode">
-    <header id="header">
-        <h1>心脏病预测结果</h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="{% url 'index' %}">主页</a></li>
-                <li>
-                    <a href="#" class="icon solid fa-angle-down">目录</a>
-                    <ul>
-                        <li><a href="{% url 'generic' %}">Generic</a></li>
-                        <li><a href="{% url 'contact' %}">Contact</a></li>
-                        <li><a href="{% url 'elements' %}">Elements</a></li>
-                        <li>
-                            <a href="#">Submenu</a>
-                            <ul>
-                                <li><a href="#">Option One</a></li>
-                                <li><a href="#">Option Two</a></li>
-                                <li><a href="#">Option Three</a></li>
-                                <li><a href="#">Option Four</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#" class="button">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
     <div>
         <section class="u-align-center u-clearfix u-image u-shading u-section-2" id="carousel_7086"
             data-image-width="1600" data-image-height="1067">
@@ -151,7 +125,7 @@
 
         <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-d4f5">
             <div class="u-clearfix u-sheet u-sheet-1">
-                <p class="u-small-text u-text u-text-variant u-text-1">预测结果可能存在偏差, 仅提供参考。</p>
+                <p class="u-small-text u-text u-text-variant u-text-1">预测结果可能存在偏差, 仅提供参考。回到<a href="{% url 'index' %}">主页</a></p>
             </div>
         </footer>
 </body>
