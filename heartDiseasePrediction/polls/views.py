@@ -51,3 +51,19 @@ def index(request):
     context = {}
     context['hello'] = 'Hello World!'
     return render(request, "index.html", context)
+
+def predict_index(request):
+    context={}
+    return render(request,'predict_index.html',context=context)
+
+def contact(request):
+    context={}
+    return render(request,'contact.html',context=context)
+
+def elements(request):
+    context={}
+    return render(request,'elements.html',context=context)
+
+def generic(request):
+    context={}
+    return render(request,'generic.html',context=context)
