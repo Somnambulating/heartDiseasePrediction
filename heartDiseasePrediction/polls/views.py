@@ -110,14 +110,18 @@ def signup(request):
     return render(request,'signup.html',context=context)
 
 def signup_request(request):
+    print("signup_request")
     if request.method == 'POST':
         form = UserRegisterForm(request.POST) or None
         if form.is_valid():
             form.save()
+            print("success")
             messages.success(request, f'即将跳转到登录页面')
             return redirect('login')
     else:
         form = UserRegisterForm()
+    
+    print("failed")
     return render(request, 'signup.html')
 
 def login_request(request):
