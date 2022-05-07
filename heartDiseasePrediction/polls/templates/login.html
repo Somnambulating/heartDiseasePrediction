@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="row">
+                <h2>登录</h2>
+                <div class="col-md-12">
+                    <form action="predict-post" method="post">
+                        {% csrf_token %}
+                        <label for="email">邮箱</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ex. youremail@mail.com" name="email">
+                        <br>
+                        <label for="password">密码</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ex. A123@paswod" name="password">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="reset" id="login" value="登录" class="btn btn-outline-primary btn-form">
+                </div>
+                <div class="col-md-6">
+                    <a href="{% url 'signup' %}" class="btn btn-outline-success btn-form">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
