@@ -23,5 +23,7 @@ urlpatterns = [
     path('login', views.login, name='login'),
     path('logout',auth.LogoutView.as_view(template_name='index.html'),name='logout'),
     
-    path('predict-post', views.predict_probility, name='predict-post')
+    path('predict-post', views.predict_probility, name='predict-post'),
+    path('login-post', views.login_request, name='login-post'),
+    path('signup-post', views.signup_request, name='signup-post')
 ]
