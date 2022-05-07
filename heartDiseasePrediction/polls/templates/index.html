@@ -49,7 +49,7 @@
 						</ul>
 					</li>
 					{% if user.is_authenticated %}
-					<li><a href="{%% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> &nbsp;
+					<li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> &nbsp;
 							登出</a></li>
 					{% else %}
 					<li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> &nbsp; 注册</a></li>
