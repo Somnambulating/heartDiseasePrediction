@@ -15,37 +15,40 @@
 <body>
     <div class="container">
         <div class="login">
-            <div class="row">
-                <h2>注册</h2>
-                <div class="col-md-12">
-                    <form action="signup-post" method="post"></form>
-                    {% csrf_token %}
-                    <label for="username">用户名</label>
-                    <input type="text" class="form-control" id="username" placeholder="Ex. username" name="username">
-                    <br>
-                    <label for="email">邮箱</label>
-                    <input type="text" class="form-control" id="email" placeholder="Ex. youremail@mail.com"
-                        name="email">
-                    <br>
-                    <label for="password">密码</label>
-                    <input type="password" class="form-control" id="password" placeholder="Ex. A123@paswod"
-                        name="password">
-                    <br>
-                    <label for="confirm_password">确认密码</label>
-                    <input type="password" class="form-control" id="confirm_password" placeholder="Ex. A123@paswod"
-                        name="confirm_password">
-                    </form>
-                </div>
+            <form action="signup-post" method="post">
+                <div class="row">
+                    <h2>注册</h2>
+                    <div class="col-md-12">
 
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="{% url 'login' %}" class="btn btn-outline-primary btn-form">登录</a>
+                        {% csrf_token %}
+                        <label for="username">用户名</label>
+                        <input type="text" class="form-control" id="username" placeholder="Ex. username"
+                            name="username">
+                        <br>
+                        <label for="email">邮箱</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ex. youremail@mail.com"
+                            name="email">
+                        <br>
+                        <label for="password">密码</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ex. A123@paswod"
+                            name="password">
+                        <br>
+                        <label for="confirm_password">确认密码</label>
+                        <input type="password" class="form-control" id="confirm_password" placeholder="Ex. A123@paswod"
+                            name="confirm_password">
+
+                    </div>
+
                 </div>
-                <div class="col-md-6">
-                    <input type="submit" id="register" value="注册" class="btn btn-outline-success btn-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="{% url 'login' %}" class="btn btn-outline-primary btn-form">登录</a>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="submit" value="注册" class="btn btn-outline-success btn-form">
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
