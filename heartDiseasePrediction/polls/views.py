@@ -95,3 +95,10 @@ def document_heart_attention(request):
     context={}
     return render(request,'document_heart_attention.html',context=context)
 
+def signup(request):
+    context={}
+    return render(request,'signup.html',context=context)
+
+def login(request):
+    context={}
+    return render(request,'login.html',context=context)
