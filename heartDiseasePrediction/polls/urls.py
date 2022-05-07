@@ -21,6 +21,7 @@ urlpatterns = [
     path('document_heart_attention', views.document_heart_attention, name='document_heart_attention'),
     path('signup', views.signup, name='signup'),
     path('login', views.login, name='login'),
+    path('logout',auth.LogoutView.as_view(template_name='index.html'),name='logout'),
     
     path('predict-post', views.predict_probility, name='predict-post')
 ]
