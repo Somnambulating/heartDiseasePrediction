@@ -112,7 +112,8 @@ def signup(request):
 def signup_request(request):
     print("signup_request")
     if request.method == 'POST':
-        print("request.method")
+        print("request.POST")
+        print(request.POST)
         form = UserRegisterForm(request.POST)
         if form.is_valid():
             print("form.is_valid")
