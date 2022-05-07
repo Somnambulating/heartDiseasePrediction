@@ -122,7 +122,7 @@ def signup_request(request):
         form = UserRegisterForm()
     
     print("failed")
-    return render(request, 'signup.html')
+    return render(request, 'index.html')
 
 def login_request(request):
     if request.method == 'POST':
@@ -139,7 +139,7 @@ def login_request(request):
         else:
             messages.info(request, f'该账户不存在')
     form = AuthenticationForm()
-    return render(request, 'login.html', {'form':form,'title':'log in'})
+    return render(request, 'index.html', {'form':form,'title':'log in'})
 
 def login(request):
     context={}
