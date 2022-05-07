@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['175.178.175.159', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'user.apps.UserConfig',
+    'polls.apps.UserConfig',
 
     'crispy_forms',
     'rest_framework',

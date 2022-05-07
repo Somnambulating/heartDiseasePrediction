@@ -15,6 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.urls import path,include
+from polls import views as user_view
+from django.contrib.auth import views as auth
+
+from .router import router
+from rest_framework.authtoken import views
 
 urlpatterns = [
     path('', include('polls.urls'))
