@@ -4,6 +4,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from django.views.decorators import csrf
+from django.shortcuts import render,redirect
+from django.contrib import messages
+from django.contrib.auth import authenticate,login
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import AuthenticationForm
+from .forms import UserRegisterForm
+from django.core.mail import send_mail
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import get_template
+from django.template import Context
 import sys
 
 sys.path.append("..")
@@ -98,6 +108,34 @@ def document_heart_attention(request):
 def signup(request):
     context={}
     return render(request,'signup.html',context=context)
+
+def signup_request(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST) or None
+        if form.is_valid():
+            form.save()
+            messages.success(request, f'即将跳转到登录页面')
+            return redirect('login')
+    else:
+        form = UserRegisterForm()
+    return render(request, 'signup.html')
+
+def login_request(request):
+    if request.method == 'POST':
+
+        #AuthenticationForm_can_also_be_used__
+
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            form = login(request,user)
+            messages.success(request, f' welcome {username} !!')
+            return redirect('index')
+        else:
+            messages.info(request, f'该账户不存在')
+    form = AuthenticationForm()
+    return render(request, 'login.html', {'form':form,'title':'log in'})
 
 def login(request):
     context={}
