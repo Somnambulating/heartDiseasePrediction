@@ -32,12 +32,18 @@ ALLOWED_HOSTS = ['175.178.175.159', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'user.apps.UserConfig',
+
+    'crispy_forms',
+    'rest_framework',
+    'rest_framework.authtoken',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles'
+    'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
