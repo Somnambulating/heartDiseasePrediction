@@ -114,7 +114,7 @@ def signup_request(request):
     if request.method == 'POST':
         print("request.POST")
         print(request.POST)
-        form = UserRegisterForm(request.POST)
+        form = UserRegisterForm(request.POST) or None
         if form.is_valid():
             print("form.is_valid")
             form.save()
