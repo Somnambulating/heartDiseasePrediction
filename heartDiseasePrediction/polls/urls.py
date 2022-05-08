@@ -19,11 +19,11 @@ urlpatterns = [
     path('document_heart_cure', views.document_heart_cure, name='document_heart_cure'),
     path('document_heart_predict', views.document_heart_predict, name='document_heart_predict'),
     path('document_heart_attention', views.document_heart_attention, name='document_heart_attention'),
-    path('signup', views.signup, name='signup'),
+    path('', views.signup, name='signup'),
     path('login', views.Login, name='login'),
     path('logout',auth.LogoutView.as_view(template_name='index.html'),name='logout'),
     
     path('predict-post', views.predict_probility, name='predict-post'),
     path('login-post', views.login_request, name='login-post'),
-    path('', views.signup_request, name='signup-post')
+    path('signup-post', views.signup_request, name='signup-post')
 ]
