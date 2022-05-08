@@ -140,9 +140,13 @@ def login_request(request):
         if user is not None:
             form = login(request,user)
             messages.success(request, f'登录成功，即将跳转至主页')
+            print("login success")
             return redirect('index')
         else:
             messages.info(request, f'该账户不存在')
+            print("login failed")
+    
+    print("AuthenticationForm")
     form = AuthenticationForm()
     return render(request, 'index.html', {'form':form,'title':'log in'})
 
