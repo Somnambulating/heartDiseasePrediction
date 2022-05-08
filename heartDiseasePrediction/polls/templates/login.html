@@ -15,27 +15,31 @@
 <body>
     <div class="container">
         <div class="login">
-            <div class="row">
-                <h2>登录</h2>
-                <div class="col-md-12">
-                    <form action="login-post" method="post">
-                        {% csrf_token %}
-                        <label for="username">用户名</label>
-                        <input type="text" class="form-control" id="username" placeholder="Ex. username" name="username">
-                        <br>
-                        <label for="password">密码</label>
-                        <input type="password" class="form-control" id="password" placeholder="Ex. A123@paswod" name="password">
-                    </form>
+            <form action="login-post" method="post">
+                <div class="row">
+                    <h2>登录</h2>
+                    <div class="col-md-12">
+                        <form action="login-post" method="post">
+                            {% csrf_token %}
+                            <label for="username">用户名</label>
+                            <input type="text" class="form-control" id="username" placeholder="Ex. username"
+                                name="username">
+                            <br>
+                            <label for="password">密码</label>
+                            <input type="password" class="form-control" id="password" placeholder="Ex. A123@paswod"
+                                name="password">
+
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <input type="reset" value="登录" class="btn btn-outline-primary btn-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="reset" value="登录" class="btn btn-outline-primary btn-form">
+                    </div>
+                    <div class="col-md-6">
+                        <a href="{% url 'signup' %}" class="btn btn-outline-success btn-form">注册</a>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <a href="{% url 'signup' %}" class="btn btn-outline-success btn-form">注册</a>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>

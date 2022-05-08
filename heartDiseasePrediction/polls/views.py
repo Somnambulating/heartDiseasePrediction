@@ -139,7 +139,7 @@ def login_request(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             form = login(request,user)
-            messages.success(request, f' welcome {username} !!')
+            messages.success(request, f'登录成功，即将跳转至主页')
             return redirect('index')
         else:
             messages.info(request, f'该账户不存在')
