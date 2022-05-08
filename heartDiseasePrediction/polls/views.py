@@ -138,6 +138,7 @@ def login_request(request):
         password = request.POST.get('password')
         user = authenticate(request, username=username, password=password)
         if user is not None:
+            print("user is not None")
             form = login(request,user)
             messages.success(request, f'登录成功，即将跳转至主页')
             print("login success")
@@ -150,6 +151,6 @@ def login_request(request):
     form = AuthenticationForm()
     return render(request, 'index.html', {'form':form,'title':'log in'})
 
-def login(request):
+def Login(request):
     context={}
     return render(request,'login.html',context=context)
