@@ -1,0 +1,154 @@
+{% load static %}
+<html>
+
+<head>
+    <title>心脏病相关概述</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style> -->
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+			<h1><a href="{% url 'index' %}">心脏健康平台</h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="{% url 'index' %}">主页</a></li>
+					<li>
+						<a href="#" class="icon solid fa-angle-down">目录</a>
+						<ul>
+							<li><a href="{% url 'contact' %}">Contact</a></li>
+						</ul>
+					</li>
+					{% if user.is_authenticated %}
+					<li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> &nbsp;
+							登出</a></li>
+					{% else %}
+					<li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> &nbsp; 注册</a></li>
+					<li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> &nbsp; 登录</a>
+					</li>
+					{% endif %}
+				</ul>
+			</nav>
+		</header>
+        <!-- Main -->
+        <div class="w3-main" style="margin-left:70px">
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">低风险(患者预测结果在30%以下):</h1>
+                    <p>目前属于心脏病低风险人群，建议:继续保持良好生活习惯，健康饮食,规律作息，适当运动，体育锻炼。  
+                    </p>
+                    <br><ol> 医疗干预:
+                        <li>定期体检，关注心脏功能。</li>
+                        <li>监测体重、心率、血压、血脂、血糖，出现异常或大幅度变化应及时就诊。</li>
+                        <li>如有不适，应及时就诊，配合医生结合自身病情选择合适的治疗方式。</li>
+                        <li>如有风湿、类风湿、哮喘等疾病，应积极治疗。</li>
+                    </ol>
+                    <br><ol> 生活干预:
+                        <li>避免过劳，保证休息，避免熬夜。</li>
+                        <li>调节情志，保持精神愉快，避免情绪剧烈波动。</li>
+                        <li>保证营养合理充足，避免过度肥胖。</li>
+                        <li>戒烟限酒。</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">中风险(患者预测结果在30%-70%):</h1>
+                    <p>目前属于心脏病中风险人群，可能已有胸闷、胸痛、心慌、汗出、乏力等.症状，对工作与生活造成一定的影响，为避免进一步加重，建议于医院进一步治疗，明确诊治，积极治疗。  
+                    </p>
+                    <br><ol> 医疗干预:
+                        <li>及时前往正规医院心血管内科检查,进一步明确诊断。</li>
+                        <li>如急性胸痛，可疑急性心肌梗死，建议尽快前往急诊内科就诊、治疗。</li>
+                        <li>监测心率、血压、血糖、心电图、心脏彩超等情况。</li>
+                        <li>根据病情,配合医生选择合适的治疗手段。</li>
+                        <li>加强冠心病自我管理，规律服用药物，及时记录异常状况。</li>
+                        <li>积极治疗基础疾病，减少并发症的出现。</li>
+                    </ol>
+                    <br><ol> 生活管理:
+                        <li>适当休息，避免剧烈活动或过度劳累。</li>
+                        <li>保持心情平静，避免剧烈变化。</li>
+                        <li>避免感冒，保持大便通畅。</li>
+                        <li>保证充足的营养和热量，饮食合理搭配，避免肥胖。</li>
+                        <li>戒烟限酒，天气变凉，注意防寒保暖，预防感冒。</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">高风险(患者预测结果在70%以上):</h1>
+                    <p>目前属于心脏病的高风险人群，胸闷、心慌、气短、乏力等不适可能已经对工作与生活造成明显影响，为避免进一步加重甚至引起猝死，建议尽快就医治疗。 
+                    </p>
+                    <br><ol> 医疗干预:
+                        <li>前往正规医院的心血管内科检查与治疗。</li>
+                        <li>如果出现胸前区剧烈疼痛、胸闷、汗出、放射肩背，可危及生命，建议立即前往急诊内科就诊。</li>
+                        <li>根据病情，明确诊断，配合医生结合自身病情,选择合适的治疗方式。</li>
+                        <li>密切监测心率、血压、血糖、心电图、心肌酶等情况。</li>
+                        <li>积极预防并发症，预防猝死。</li>
+                        <li>谨遵医嘱，规范用药，不可擅自停药、换药或加减药量。</li>
+                        <li>及时复诊。</li>
+                    </ol>
+                    <br><ol> 生活干预:
+                        <li>改善饮食，保持营养均衡，可适当摄入粗粮、豆类等；少食用油腻高糖的食物，限制钠盐的摄入；避免摄入刺激性食物；避免饮用烈性酒、暴饮暴食，冷热刺激，控制体重，避免肥胖。</li>
+                        <li>彻底戒烟，避免吸入二手烟。</li>
+                        <li>病情缓解后，可根据身体情况，每天坚持锻炼30分钟，如散步等，但避免剧烈运动或重体力工作。如果患者有不稳定心绞痛或严重的高血压、心衰等，不宜运动。</li>
+                        <li>避免暴怒、焦虑、过度悲伤等。</li>
+                        <li>天气变凉，注意防寒保暖,预防感冒。</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'js/browser.min.js' %}"></script>
+    <script src="{% static 'js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'js/util.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>

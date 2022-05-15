@@ -19,6 +19,7 @@ urlpatterns = [
     path('document_heart_cure', views.document_heart_cure, name='document_heart_cure'),
     path('document_heart_predict', views.document_heart_predict, name='document_heart_predict'),
     path('document_heart_attention', views.document_heart_attention, name='document_heart_attention'),
+    path('document_heart_predict_advise', views.document_heart_predict_advise, name='document_heart_predict_advise'),
     path('', views.signup, name='signup'),
     path('login', views.Login, name='login'),
     path('logout',auth.LogoutView.as_view(template_name='index.html'),name='logout'),

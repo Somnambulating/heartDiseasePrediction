@@ -105,6 +105,10 @@ def document_heart_attention(request):
     context={}
     return render(request,'document_heart_attention.html',context=context)
 
+def document_heart_predict_advise(request):
+    context={}
+    return render(request, 'document_heart_predict_advise.html', context=context)
+
 def signup(request):
     context={}
     return render(request,'signup.html',context=context)
